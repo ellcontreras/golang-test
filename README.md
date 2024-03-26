@@ -1,5 +1,8 @@
 # Stratplus Challenge
 
+## There is a file called Stratplus.postman_collection.json with Postman collection to test
+About time I did not write unit tests :c
+
 ### Commands
 Since I run and build on win11 I had issues with docker, but this works
 ``` shell
