@@ -1,0 +1,6 @@
+.git
+.husky
+mocks
+node_modules
+proto
+vendor

@@ -1,0 +1,33 @@
+{
+  "name": "stratplus",
+  "version": "1.0.0",
+  "description": "Regulatory microservice",
+  "scripts": {
+    "prepare": "husky install",
+    "package": "",
+    "validate": "make validate",
+    "lint-md": "remark -f ."
+  },
+  "author": "Luis Contreras Guerra",
+  "devDependencies": {
+    "aws-sdk": "2.954.0",
+    "husky": "7.0.0",
+    "remark-cli": "10.0.0",
+    "remark-preset-lint-recommended": "6.1.1",
+    "serverless": "2.61.0",
+    "serverless-domain-manager": "4.2.3",
+    "serverless-dynamodb-global-table-v2-plugin": "1.0.1",
+    "serverless-plugin-canary-deployments": "0.6.0",
+    "serverless-plugin-existing-s3": "2.4.0",
+    "serverless-prune-plugin": "1.4.1",
+    "serverless-s3-replication-plugin": "1.0.1",
+    "serverless-step-functions": "3.7.0",
+    "serverless-tag-api-gateway": "1.0.0",
+    "serverless-tag-cloud-watch-logs": "1.0.0"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  }
+}

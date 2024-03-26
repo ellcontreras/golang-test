@@ -1,0 +1,66 @@
+linters:
+  enable:
+    - deadcode
+    - dupl
+    - errcheck
+    - funlen
+    - goconst
+    - godot
+    - gofmt
+    - gomnd
+    - gosimple
+    - govet
+    - ifshort
+    - ineffassign
+    - predeclared
+    - structcheck
+    - thelper
+    - typecheck
+    - revive
+    - unparam
+    - unused
+    - varcheck
+    - wastedassign
+    - whitespace
+
+linters-settings:
+  revive:
+    ignore-generated-header: false
+    severity: error
+    confidence: 0.8
+    rules:
+      - name: exported
+  funlen:
+    lines: 70
+    statements: 50
+  godot:
+    scope: toplevel
+    capital: true
+  gofmt:
+    simplify: true
+  gomnd:
+    settings:
+      mnd:
+        checks: argument,case,condition,operation,return,assign
+  ifshort:
+    max-decl-lines: 1
+    max-decl-chars: 30
+  unparam:
+    check-exported: false
+
+issues:
+  exclude:
+    - EXC0012
+  exclude-use-default: false
+
+run:
+  skip-dirs:
+    - node_modules
+    - .git
+    - .husky
+    - mocks
+    - node_modules
+    - scripts
+    - vendor
+  skip-files:
+    - constants.go
